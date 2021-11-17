@@ -4,118 +4,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"rel="stylesheet" />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     </head>
-    <body>
-        <header class="header">
-            <div class="container header-container">
-                <nav class="header-navi">
-                    <a class="logo-text link" href=""><span class="logo-accent">Web<span class="tet-accent">Studio</a>
-                    <ul class="header-list list">
-                        <li class="header-item link">
-                            <a class="logo-accent link" href="/index.html">Студия</a>
-                        </li>
-                        <li class="header-item">
-                            <a class="header-link link" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header-connect">
-                    <ul class="header-list list">
-                        <li class="contact-item">
-                            <a href="mailto:info@devstudio.com" class="header-contacts link">info@devstudio.com</a>
-                        </li>
-                        <li class="contact-item">
-                            <a href="tel:+380961111111" class="header-contacts link">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="header-navi">
+                <a class="logo-text link" href=""><span class="logo-accent">Web<span class="tet-accent">Studio</a>
+                <ul class="header-list list">
+                    <li class="header-item">
+                        <a class="header-link current link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contact-list list">
+                <li class="contact-item">
+                    <a href="mailto:info@devstudio.com" class="header-contacts link">info@devstudio.com</a>
+                </li>
+                <li class="contact-item">
+                    <a href="tel:+380961111111" class="header-contacts link">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <main>
-        <section class="filter">
-            <div class="container logo-container">
-            <h1 class="filter-title" hidden>Projects></h1>
-            <ul class="filter-list list">
-                <li class="filter-item"><button class="filter-btn" type="button">Все</button></li>
-                <li class="filter-item"><button class="filter-btn" type="button">Веб-сайты</button></li>
-                <li class="filter-item"><button class="filter-btn" type="button">Приложение</button></li>
-                <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
-                <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li>
-            </div>
-            </ul>
-            <div class="container tiitle-container">
-            <ul class="work-list list">
-                <li class="work-item">
-                    <img src="./images/Komp.png" alt="Комп" width="370" alt="Технокряк" />
-                    <h2 class="work-title">Технокряк</h2>
-                    <p class="work-text">Веб-сайт сайт</p>
-                </li>
-                <li>
-                    <img src="./images/Basketbol.png " alt="Бастектол" width="370" alt="Постер New Orlean vs Golden Star" />
-                    <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
-                    <p class="work-text">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/Akyla.png" alt="Акула" width="370" alt="Ресторан Seafood" />
-                    <h2 class="work-title">Ресторан Seafood</h2>
-                    <p class="work-text">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/Nayshniki.png" alt="Наушники" width="370" alt="Проект Prime" />
-                    <h2 class="work-title">Проект Prime</h2>
-                    <p class="work-text">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/Korobka.png" alt="Коробки" width="370" alt="Проект Boxes" />
-                    <h2 class="work-title">Проект Boxes</h2>
-                    <p class="work-text">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/Imac.png" alt="Макбоок" width="370" alt="Inspiration has no Borders" />
-                    <h2 class="work-title">Inspiration has no Borders</h2>
-                    <p class="work-text">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/Kniga.png" alt="Книга" width="370" alt="Издание Limited Edition" />
-                    <h2 class="work-title">Издание Limited Edition</h2>
-                    <p class="work-text">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/Itiketka.png" alt="Этикетка" width="370" alt="Проект LAB" />
-                    <h2 class="work-title">Проект LAB</h2>
-                    <p class="work-text">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/Imac 2.png" alt="Макбоок 2" width="370" alt="Growing Business" />
-                    <h2 class="work-title">Growing Business</h2>
-                    <p class="work-text">Приложение</p>
-                </li>
-            </ul>
+        <section class="filter section">
+            <div class="container">
+                <h1 class="filter-title" hidden>Projects</h1>
+                <ul class="filter-list list">
+                    <li class="header-link current"><button class="filter-btn" type="button">Все</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Веб-сайты</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Приложения</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li>
+                </ul>
+                <ul class="work-list list">
+                    <li class="work-item">
+                        <img src="./images/Komp.png" width="370" alt="Технокряк" />
+                        <h2 class="work-title">Технокряк</h2>
+                        <p class="work-text">Веб-сайт</p>
+                    </li>
+                    <li class="work-item">
+                        <img src="./images/Basketbol.png" width="370" alt="Постер New Orlean vs Golden Star" />
+                        <h2 class="work-title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+                        <p class="work-text">Дизайн</p>
+                    </li>
+                    <li class="work-item">
+                        <img src="./images/Akyla.png" width="370" alt="Ресторан Seafood" />
+                        <h2 class="work-title">Ресторан <span lang="en">Seafood</span></h2>
+                        <p class="work-text">Приложение</p>
+                    </li>
+                    <li class="work-item">
+                        <img src="./images/Nayshniki.png" width="370" alt="Проект Prime" />
+                        <h2 class="work-title">Проект <span lang="en">Prime</span></h2>
+                        <p class="work-text">Маркетинг</p>
+                    </li>
+                    <li class="work-item">
+                        <img src="./images/Korobka.png" width="370" alt="Проект Boxes" />
+                        <h2 class="work-title">Проект <span lang="en">Boxes</span></h2>
+                        <p class="work-text">Приложение</p>
+                    </li>
+                    <li class="work-item">
+                        <img lang="en" src="./images/Imac.png" width="370"alt="Inspiration has no Borders" />
+                        <h2 lang="en" class="work-title">Inspiration has no Borders</h2>
+                        <p class="work-text">Веб-сайт</p>
+                    </li>
+                    <li class="work-item">
+                        <img src="./images/Kniga.png" width="370" alt="Издание Limited Edition" />
+                        <h2 class="work-title">Издание <span lang="en">Limited Edition</span></h2>
+                        <p class="work-text">Издание <span lang="en">Limited Edition</span></p>
+                    </li>
+                    <li class="work-item">
+                        <img src="./images/Itiketka.png" width="370" alt="Проект LAB" />
+                        <h2 class="work-title">Проект <span lang="en">LAB</span></h2>
+                        <p class="work-text">Маркетинг</p>
+                    </li>
+                    <li class="work-item">
+                        <img lang="en" src="./images/Imac 2.png" width="370" alt="Growing Business" />
+                        <h2 lang="en" class="work-title">Growing Business</h2>
+                        <p class="work-text">Приложение</p>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
-    <footer class="footer-contacts link">
-        <section class="mait-work">
-            <div class="container header-container">
-            <a class="logo-text link" href=""><span class="logo-accent">Web<span class="tit-accent">Studio</a>
+    <footer class="footer-main">
+        <div class="container">
+            <a class="logo-text link" href=""><span class="logo-accent">Web<span class="tet-accent">Studio</a>
             <address class="footer">
                 <ul class="footer-list list">
                     <li class="footer-item">
-                        <a href="https://goo.gl/maps/Gt5WjNEcUj5eYQis8" class="footer-address link">г. Киев, пр-т Леси
+                        <a href="https://goo.gl/maps/25rhQZWRj38k3xnr6" class="footer-address link">г. Киев, пр-т Леси
                             Украинки, 26</a>
                     </li>
                     <li class="footer-item">
-                        <a href="mailto:info@devstudio.com" class="footer-contacts link">info@devstudio.com</a>
+                        <a href="mailto:info@example.com" class="footer-contacts link">info@example.com</a>
                     </li>
                     <li class="footer-item">
-                        <a href="tel:+380961111111" class="footer-contacts link">+38 096 111 11 11</a>
+                        <a href="tel:+380991111111" class="footer-contacts link">+38 099 111 11 11</a>
                     </li>
                 </ul>
-                </div>
-        </section>
-        </address>
+            </address>
+        </div>
     </footer>
     </body>
     </html>
