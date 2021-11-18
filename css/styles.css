@@ -58,8 +58,8 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .img {
@@ -219,7 +219,7 @@ button {
   border-radius: 4px;
   width: 200;
   height: 50;
-  color: var(--header-title-color);
+  color: var(--first-title-color);
   background-color: var(--hover-color);
   cursor: pointer;
   margin-top: 30px;
@@ -230,7 +230,7 @@ button {
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--hover-color);
-  color: var(--second-color);
+  color: var(--first-title-color);
 }
 
 /* ---------Features section---------- */
@@ -318,7 +318,7 @@ button {
 .team-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .team-personal {
@@ -393,7 +393,7 @@ button {
 /* -----------------Filter------------------ */
 
 .filter {
-  background-color: var(--first-color);
+  background-color: var(--first-button-color);
 }
 
 .filter-list {
@@ -428,7 +428,7 @@ button {
   letter-spacing: 0.03em;
   cursor: pointer;
   background-color: var(--background-button);
-  color: var(--second-color);
+  color: var(--second-button-color);
   border: none;
   border-radius: 4px;
   margin-right: 8px;
@@ -448,7 +448,7 @@ button {
   letter-spacing: 0.03em;
   cursor: pointer;
   background-color: var(--hover-color);
-  color: var(--first-color);
+  color: var(--first-button-color);
   border: none;
 }
 
@@ -458,7 +458,7 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: center;
-  color: var(--second-color);
+  color: var(--second-button-color);
 }
 
 .work-text {
@@ -466,5 +466,5 @@ button {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--third-color);
+  color: var(--main-text-color);
 }
