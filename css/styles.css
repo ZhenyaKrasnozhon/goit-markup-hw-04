@@ -100,6 +100,13 @@ button {
   letter-spacing: 0.02em;
 }
 
+.logo-teext {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .logo-accent {
   color: var(--accent-color);
 }
@@ -117,6 +124,7 @@ button {
 }
 
 .header {
+  border-bottom: 1px solid #ececec;
   background-color: var(--first-color);
   padding-top: 24px;
   padding-bottom: 25px;
@@ -187,18 +195,9 @@ button {
 /*--------------Main section-------------*/
 
 .main-work {
+  padding: 200px 0;
   background-color: var(--second-title-color);
   text-align: center;
-}
-
-.main-container {
-  padding-top: 200px;
-  padding-left: 200px;
-  padding-bottom: 280px;
-  padding-right: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .main-title {
@@ -300,7 +299,7 @@ button {
 /* ---------------Team------------- */
 
 .team {
-  background-color: var(--first-button-color);
+  background-color: #f5f4fa;
 }
 
 .team-title {
@@ -321,6 +320,7 @@ button {
 }
 
 .team-item {
+  background-color: white;
   background-color: var(--first-title-color);
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
@@ -356,14 +356,14 @@ button {
 
 /* --------------FOOTER-------------------  */
 
+.footer-item {
+  margin-top: 10px;
+}
+
 .footer-main {
   background-color: var(--second-title-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-list {
-  margin-top: 20px;
 }
 
 .footer-logo {
@@ -423,6 +423,7 @@ button {
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
@@ -437,11 +438,12 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  background-color: var(--background-button);
+  background-color: var(--team-section-color);
   color: var(--second-button-color);
   border: none;
   border-radius: 4px;
   margin-right: 8px;
+  padding: 6px 22px;
 }
 
 .filter-btn:last-child {
@@ -467,7 +469,7 @@ button {
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
-  margin-top: 34px;
+  margin-top: 50px;
 }
 
 .work-item {
@@ -481,14 +483,12 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-align: center;
   color: var(--second-button-color);
 }
 
 .work-text {
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
