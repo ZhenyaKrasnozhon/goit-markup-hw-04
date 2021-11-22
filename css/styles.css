@@ -67,6 +67,11 @@ button {
   max-width: 100%;
 }
 
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
 /* -----------Logo---------------- */
 
 .logo {
@@ -165,11 +170,6 @@ button {
 .header-container {
   display: flex;
   align-items: center;
-}
-
-.contact-list {
-  display: flex;
-  margin-left: auto;
 }
 
 .header-list {
@@ -463,6 +463,8 @@ button {
   color: var(--first-button-color);
   border: none;
 }
+
+/* -----------------Work------------------ */
 
 .work-list {
   display: flex;
