@@ -154,11 +154,12 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--third-color);
+  color: var(--second-color);
 }
 
 .header-contacts:focus,
-.header-contacts:hover {
+.header-contacts:hover,
+.current {
   color: var(--accent-color);
 }
 
@@ -192,11 +193,48 @@ button {
   margin-right: 0px;
 }
 
+/*--------------Masters-------------*/
+
+.masters-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-social-item + .masters-social-item {
+  margin-left: 10px;
+}
+
+.masters-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.masters-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--first-title-color);
+}
+
+.masters-social-icon {
+  fill: #ffffff;
+}
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+  background-color: var(--hover-color);
+}
+
 /*--------------Main section-------------*/
 
 .main-work {
   padding: 200px 0;
   background-color: var(--second-title-color);
+  /*background-image: linear-gradient(rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)),
+  url(../images/Veselo.png);*/
   text-align: center;
 }
 
@@ -342,8 +380,9 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--third-color);
+  color: var(--main-text-color);
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .team-real {
