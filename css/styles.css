@@ -91,6 +91,11 @@ button {
   color: var(--first-color);
 }
 
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 /* -----------------Header-------------- */
 
 .current-link {
@@ -115,6 +120,11 @@ button {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-bottom: 20px;
+}
+
+.logo-teext {
+  margin-bottom: 20px;
 }
 
 .logo-accent {
@@ -314,6 +324,24 @@ button {
   color: var(--main-text-color);
 }
 
+.features-title {
+  visibility: hidden;
+}
+
+.filter-title {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* -----------About------------ */
 
 .about {
@@ -399,10 +427,6 @@ button {
 }
 
 /* --------------FOOTER-------------------  */
-
-.footer-item {
-  margin-top: 10px;
-}
 
 .footer-main {
   background-color: var(--second-title-color);
@@ -515,7 +539,6 @@ button {
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
-  margin-top: 50px;
 }
 
 .work-item {
