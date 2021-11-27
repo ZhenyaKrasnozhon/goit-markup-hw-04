@@ -3,9 +3,7 @@
     <title> Home Work 4 </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     </head>
@@ -26,10 +24,18 @@
             </nav>
             <ul class="contact-list list">
                 <li class="contact-item">
-                    <a href="mailto:info@devstudio.com" class="header-contacts current link">info@devstudio.com</a>
+                    <a href="mailto:info@devstudio.com" class="header-contacts header-envelope-hover link">
+                        <svg class="contact-item-icon" width="16" height="10">
+                            <use href="./images/icons 2.svg#icon-envelope-hover"></use>
+                            </svg>
+                            info@devstudio.com</a>
                 </li>
                 <li class="contact-item">
-                    <a href="tel:+380961111111" class="header-contacts link">+38 096 111 11 11</a>
+                    <a href="tel:+380961111111" class="header-contacts header-tel link">
+                        <svg class="contact-item-icon" width="16" height="15">
+                            <use href="./images/icons 2.svg#icon-mobile"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -45,7 +51,37 @@
             <div class="container">
                 <h2 class="features-title visually-hidden">заголовок</h2>
                 <ul class="features-list list">
-                    <li class="features-item">
+                    <li class="features-icon-item">
+                        <a href="" class="features-icon-link">
+                        <svg class="features-icon-icon" width="70" height="70">
+                            <use href="./images/Icons 3.svg#icon-Spytnik"></use>
+                        </svg>
+                        </a>
+                        </li>
+                        <li class="features-icon-item">
+                            <a href="" class="features-icon-link">
+                                <svg class="features-icon-icon" width="70" height="70">
+                                    <use href="./images/Icons 3.svg#icon-Chasiki"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="features-icon-item">
+                            <a href="" class="features-icon-link">
+                                <svg class="features-icon-icon" width="70" height="70">
+                                    <use href="./images/Icons 3.svg#icon-Diagrama"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="features-icon-item">
+                            <a href="" class="features-icon-link">
+                                <svg class="features-icon-icon" width="70" height="70">
+                                    <use href="./images/Icons 3.svg#icon-Komonavt"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        </ul>
+                        <ul class="features-list list">
+                        <li class="features-item">
                         <h3 class="features-func">Внимание к деталям</h3>
                         <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию
                             позиции</p>
@@ -216,13 +252,63 @@
                                     <a href="" class="masters-social-link">
                                         <svg class="masters-social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
+                                    </svg>
+                                </a>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+    <section class="client section">
+        <h2 class="client-title">Постоянные клиенты</h2>
+        <ul class="client-list list">
+            <li class="client-item">
+                <a href="" class="client-link">
+                    <svg class="client-icon" width="41" height="46.7">
+                    <use href="./images/Icons 4.svg#icon-YA-CO"></use>
+                </svg>
+            </a>
+            </li>
+            <li class="client-item">
+                <a href="" class="client-link">
+                    <svg class="client-icon" width="40" height="52">
+                        <use href="./images/Icons 4.svg#icon-Company-Tagline-HERE"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="client-item">
+                <a href="" class="client-link">
+                    <svg class="client-icon" width="43.46" height="41.18">
+                        <use href="./images/Icons 4.svg#icon-Company"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="client-item">
+                <a href="" class="client-link">
+                    <svg class="client-icon" width="84.44" height="40.62">
+                        <use href="./images/Icons 4.svg#icon-Foster-PETERS"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="client-item">
+                <a href="" class="client-link">
+                    <svg class="client-icon" width="62.54" height="45.43">
+                        <use href="./images/Icons 4.svg#icon-BRAND"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="client-item">
+                <a href="" class="client-link">
+                    <svg class="client-icon" width="93.79" height="43.93">
+                        <use href="./images/Icons 4.svg#icon-Company-TAGLINE"></use>
+                    </svg>
+            </a>
+            </li>
+            </ul>
+            </div>
+            </li>
+        </ul>
+    </section>
     </main>
     <section class="team section">
         <footer class="footer-main">
@@ -246,4 +332,4 @@
             </div>
         </footer>
     </body>
-    </html>
+</html>
