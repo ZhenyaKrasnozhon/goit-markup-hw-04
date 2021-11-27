@@ -14,6 +14,7 @@
   --main-work-color: #2e2e2e;
   --filter-btn-color: #f5f4fa;
   --team-section-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 p,
@@ -96,14 +97,15 @@ button {
   margin-bottom: 20px;
 }
 
-/* -----------------Header-------------- */
+/* -----------------Current-------------- */
 
 .current-link {
   color: var(--accent-color);
 }
-
+/* -----------------LOGO-------------- */
 .logo-text {
   font-family: Raleway;
+  font-style: normal;
   margin-right: 93px;
   font-weight: 700;
   font-size: 26px;
@@ -138,7 +140,7 @@ button {
 .tit-accent {
   color: var(--first-title-color);
 }
-
+/* -----------------header-------------- */
 .header-logo-second {
   color: var(--tet-accent-color);
 }
@@ -169,7 +171,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--second-color);
+  color: var(--main-text-color);
 }
 
 .header-contacts:focus,
@@ -202,10 +204,19 @@ button {
 
 .contact-item {
   margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-item:last-child {
   margin-right: 0px;
+}
+
+.contact-item-icon {
+  fill: currentColor;
+  align-items: center;
+  justify-content: center;
 }
 
 /*--------------Masters-------------*/
@@ -246,11 +257,20 @@ button {
 /*--------------Main section-------------*/
 
 .main-work {
-  padding: 200px 0;
-  background-color: var(--second-title-color);
-  /*background-image: linear-gradient(rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)),
-  url(../images/Veselo.png);*/
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Veselo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-title {
@@ -293,6 +313,25 @@ button {
 
 .features {
   background-color: var(--first-title-color);
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+}
+
+.features-icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-section-color);
+  margin-bottom: 30px;
+}
+
+.features-icon-item + .features-icon-item {
+  margin-left: 30px;
 }
 
 .features-list {
@@ -340,6 +379,55 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* ---------------Client------------------- */
+
+.client-title {
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+.client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+.client-item + .client-item {
+  margin-left: 30px;
+}
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106px;
+  height: 60px;
+  color: var(--icon-color);
+}
+.client-icon {
+  fill: currentColor;
+}
+.client-item:hover,
+.client-item:focus {
+  border: 1px solid var(--hover-color);
+}
+.client-item:hover .client-link,
+.client-item:focus .client-link {
+  color: var(--hover-color);
 }
 
 /* -----------About------------ */
