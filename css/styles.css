@@ -148,15 +148,16 @@ button {
 .header {
   border-bottom: 1px solid #ececec;
   background-color: var(--first-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--second-color);
 }
 
@@ -167,16 +168,19 @@ button {
 }
 
 .header-contacts {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--main-text-color);
 }
 
 .header-contacts:focus,
-.header-contacts:hover,
-.current {
+.header-contacts:hover {
   color: var(--accent-color);
 }
 
