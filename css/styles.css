@@ -215,8 +215,7 @@ button {
 
 .contact-item-icon {
   fill: currentColor;
-  align-items: center;
-  justify-content: center;
+  margin-right: 10px;
 }
 
 /*--------------Masters-------------*/
