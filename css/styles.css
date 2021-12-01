@@ -592,17 +592,21 @@ button {
   color: var(--header-title-color);
   margin-bottom: 20px;
 }
+
 .footer-social-list {
   display: flex;
   justify-content: center;
 }
+
 .footer-social-item {
   width: 44px;
   height: 44px;
 }
+
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
 }
+
 .footer-social-link {
   display: flex;
   align-items: center;
@@ -612,11 +616,46 @@ button {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--hover-color);
 }
-.footer-social-icon {
+
+.footer-lesii-icon {
+  fill: var(--first-title-color);
+}
+
+.footer-lesii-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-lesii-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-lesii-item + .footer-lesii-item {
+  margin-left: 10px;
+}
+
+.footer-lesii-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-lesii-link:hover,
+.footer-lesii-link:focus {
+  background-color: var(--hover-color);
+}
+
+.footer-lesii-icon {
   fill: var(--first-title-color);
 }
 
