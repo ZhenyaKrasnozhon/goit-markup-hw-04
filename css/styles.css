@@ -397,43 +397,44 @@ button {
   display: flex;
   justify-content: center;
 }
+
 .client-item {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
-
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
 }
+
 .client-item + .client-item {
   margin-left: 30px;
 }
+
 .client-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 106px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   color: var(--icon-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
+
 .client-icon {
   fill: currentColor;
 }
-.client-item:hover,
-.client-item:focus {
+
+.client-item:focus,
+.client-item:hover {
   border: 1px solid var(--hover-color);
-}
-.client-item:hover .client-link,
-.client-item:focus .client-link {
-  color: var(--hover-color);
+  border-color: var(--hover-color);
 }
 
 /* -----------About------------ */
 
 .about {
-  background-color: var(--first-color);
+  background-color: var(--header-title-color);
   padding-top: 0;
 }
 
