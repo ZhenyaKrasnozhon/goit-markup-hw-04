@@ -15,6 +15,7 @@
   --filter-btn-color: #f5f4fa;
   --team-section-color: #f5f4fa;
   --icon-color: #afb1b8;
+  --group-color: #afb1b8;
 }
 
 p,
@@ -227,15 +228,17 @@ button {
 .masters-social-list {
   display: flex;
   justify-content: center;
-}
-
-.masters-social-item + .masters-social-item {
-  margin-left: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .masters-social-item {
   width: 44px;
   height: 44px;
+}
+
+.masters-social-item + .masters-social-item {
+  margin-left: 10px;
 }
 
 .masters-social-link {
@@ -246,15 +249,39 @@ button {
   align-items: center;
   justify-content: center;
   background-color: var(--first-title-color);
+  color: var(--group-color);
 }
 
 .masters-social-icon {
-  fill: #ffffff;
+  fill: currentColor;
 }
 
 .masters-social-link:hover,
 .masters-social-link:focus {
   background-color: var(--hover-color);
+  color: var(--first-title-color);
+}
+
+.masters-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.masters-top-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.56;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  height: 100%;
+  transform: translateY(100%);
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
+  width: 370px;
+  height: 100%;
 }
 
 /*--------------Main section-------------*/
@@ -428,10 +455,10 @@ button {
   fill: currentColor;
 }
 
-.client-item:focus,
-.client-item:hover {
-  border: 1px solid var(--hover-color);
-  border-color: var(--hover-color);
+.client-link:focus,
+.client-link:hover {
+  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* -----------About------------ */
@@ -622,25 +649,25 @@ button {
   background-color: var(--hover-color);
 }
 
-.footer-lesii-icon {
+.footer-social-icon {
   fill: var(--first-title-color);
 }
 
-.footer-lesii-list {
+.footer-social-list list {
   display: flex;
   justify-content: center;
 }
 
-.footer-lesii-item {
+.footer-social-item {
   width: 44px;
   height: 44px;
 }
 
-.footer-lesii-item + .footer-lesii-item {
+.footer-social-item + .footer-social-item {
   margin-left: 10px;
 }
 
-.footer-lesii-link {
+.footer-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -650,13 +677,19 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-lesii-link:hover,
-.footer-lesii-link:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--hover-color);
 }
 
-.footer-lesii-icon {
+.footer-social-icon {
   fill: var(--first-title-color);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* --------------- PORTFOLIO----------------- */
@@ -726,12 +759,26 @@ button {
   margin-bottom: 30px;
 }
 
+.work-item:hover .masters-top-text {
+  transform: translateY(0);
+}
+
+.work-item-focus {
+  background-color: var(--first-button-color);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .work-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-button-color);
+}
+
+.work-item-focus:hover,
+.work-item-focus:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .work-text {
@@ -745,4 +792,54 @@ button {
   border-top: none;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.dropwindow {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 250ms, visibility 250ms;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
